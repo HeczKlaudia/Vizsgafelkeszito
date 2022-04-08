@@ -6,20 +6,14 @@ public class Harcos extends Karakter implements Iterable<Eszkoz>{
 
     private int ero, ugyesseg;
 
-    public Harcos(int ero, int ugyesseg, String karakterNev, String faj, String nev, int suly) {
-        super(karakterNev, "ember", nev, suly);
+    public Harcos(int ero, int ugyesseg, String karakterNev, String faj) throws KarakterException {
+        super(karakterNev, faj);
         this.ero = ero;
         this.ugyesseg = ugyesseg;
     }
 
-    public Harcos(int ero, int ugyesseg, String nev, int suly) {
-        super(nev, suly);
-        this.ero = ero;
-        this.ugyesseg = ugyesseg;
-    }
-    
-    public Harcos(String nev, int suly) {
-        super(nev, suly);
+    public Harcos(int ero, int ugyesseg, String karakterNev) throws KarakterException {
+        this(ero, ugyesseg, karakterNev, "ember");
     }
 
     @Override
