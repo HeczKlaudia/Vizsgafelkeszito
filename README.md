@@ -1,1 +1,2 @@
 # Vizsgafelkeszito
+Hecz Klaudia
