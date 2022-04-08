@@ -10,6 +10,10 @@ public class Vizsga_gyakorlas {
     public static void main(String[] args) {       
         
         Harcos h1 = new Harcos("Elf", 30);
+        Harcos h2 = new Harcos("Manó", 10);
+        Harcos h3 = new Harcos("Ember", 40);
+        Harcos h4 = new Harcos("Ork", 80);
+        
         h1.eszkozFelvesz(new Eszkoz("kard", 20));
         h1.eszkozFelvesz(new Eszkoz("páncél", 50));
         h1.eszkozFelvesz(new Eszkoz("lándzsa", 10));

@@ -10,6 +10,13 @@ public abstract class Karakter extends Eszkoz {
     
     final ArrayList<Eszkoz> eszkozok;
 
+    public Karakter(String karakterNev, String faj, String nev, int suly) {
+        super(nev, suly);
+        this.karakterNev = karakterNev;
+        this.faj = faj;
+        this.eszkozok = new ArrayList<>();
+    }
+    
     public Karakter(String nev, int suly) {
         super(nev, suly);
         this.eszkozok = new ArrayList<>();
